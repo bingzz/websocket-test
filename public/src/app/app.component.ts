@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
   sendDataUpdate() {
     const data = { username: 'irving', password: '12345' }
-    this.socket.emit('dataUpdate', data)
+    this.socket.emit('login', data)
   }
 
   disconnect() {
